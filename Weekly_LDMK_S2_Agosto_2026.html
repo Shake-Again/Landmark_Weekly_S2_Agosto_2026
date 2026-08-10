@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Resumen Semanal — Landmark AR</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f4f3ee;color:#1a1a18;font-size:15px;line-height:1.7;padding:2rem 1rem}.page{max-width:880px;margin:0 auto}.card{background:#fff;border-radius:16px;border:.5px solid #e0dfd8;padding:1.75rem 2rem;margin-bottom:1.1rem}h1{font-size:22px;font-weight:500;margin-bottom:4px}.subtitle{font-size:13px;color:#888780}.st{font-size:11px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:#888780;margin:0 0 12px;border-bottom:.5px solid #e0dfd8;padding-bottom:6px}.g{display:grid;gap:10px}.g4{grid-template-columns:repeat(4,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.mc{background:#f4f3ee;border-radius:8px;padding:12px 14px}.ml{font-size:11px;color:#888780;margin:0 0 3px}.mv{font-size:20px;font-weight:500;margin:0}.ms{font-size:11px;color:#888780;margin:3px 0 0}.up{color:#1D9E75}.warn{color:#BA7517}.dn{color:#D85A30}.nb{background:#E1F5EE;border-left:3px solid #1D9E75;border-radius:0 8px 8px 0;padding:10px 14px;font-size:13px;line-height:1.6;margin-top:10px}.wb{background:#FAEEDA;border-left:3px solid #BA7517;border-radius:0 8px 8px 0;padding:10px 14px;font-size:13px;line-height:1.6;margin-top:10px}table.t{width:100%;border-collapse:collapse;font-size:12px}table.t th{text-align:left;color:#888780;font-weight:500;padding:5px 8px 7px;border-bottom:.5px solid #e0dfd8;font-size:11px;text-transform:uppercase;letter-spacing:.04em}table.t td{padding:7px 8px;border-bottom:.5px solid #e0dfd8;vertical-align:middle}table.t tr:last-child td{border-bottom:none}.total-row td{background:#f9f9f7;font-weight:500}.tag{font-size:10px;color:#888780;display:block;margin-top:1px}strong{font-weight:500}.prog-wrap{background:#e0dfd8;border-radius:4px;height:6px;margin-top:6px;overflow:hidden}.prog-bar{height:100%;border-radius:4px}.week-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:12px}.week-card{background:#f4f3ee;border-radius:10px;padding:14px}.week-title{font-size:11px;font-weight:500;color:#888780;margin-bottom:8px;text-transform:uppercase;letter-spacing:.04em}.week-row{display:flex;justify-content:space-between;font-size:12px;padding:3px 0;border-bottom:.5px solid #e0dfd8}.week-row:last-child{border-bottom:none}.week-label{color:#888780}.checklist{display:flex;flex-direction:column;gap:5px}.cl-item{display:flex;align-items:flex-start;gap:12px;background:#f4f3ee;border-radius:10px;padding:11px 14px;text-decoration:none;color:#1a1a18}.cl-icon{font-size:17px;flex-shrink:0;margin-top:1px}.cl-label{font-size:12px;font-weight:500;margin-bottom:1px}.cl-sub{font-size:11px;color:#888780}.cl-tag{display:inline-block;font-size:10px;padding:1px 6px;border-radius:8px;font-weight:500;margin-left:6px}.cl-now{background:#E1F5EE;color:#0F6E56}.cl-next{background:#E6F1FB;color:#185FA5}.act{border-radius:10px;padding:13px 15px;margin-bottom:7px}.act-now{background:#E1F5EE;border-left:4px solid #1D9E75}.act-title{font-size:12px;font-weight:500;margin-bottom:4px}.act-body{font-size:12px;line-height:1.6;color:#3a3a38}.badge{display:inline-block;font-size:10px;padding:2px 7px;border-radius:20px;font-weight:500}.b-green{background:#E1F5EE;color:#0F6E56}.b-amber{background:#FAEEDA;color:#854F0B}.b-gray{background:#F1EFE8;color:#5F5E5A}.b-blue{background:#E6F1FB;color:#185FA5}
+@media(max-width:620px){.g4{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(2,1fr)}.week-grid{grid-template-columns:1fr}}
+</style></head><body><div class="page">
+
+<div class="card">
+  <h1>Landmark AR — Resumen semanal</h1>
+  <p class="subtitle">Primeros 9 días de agosto vs julio · Transición S3 jul → S4 jul → S1 ago · Análisis de tráfico y tendencias · Meta + Google</p>
+</div>
+
+<!-- ═══ KPIs ═══ -->
+<div class="card">
+  <div class="st">Julio consolidado (1–31/7)</div>
+  <div class="g g4" style="margin-bottom:10px">
+    <div class="mc"><p class="ml">Facturación web</p><p class="mv up">$68,6M</p><p class="ms up">Obj. $65M → 105,5% ✓</p><div class="prog-wrap"><div class="prog-bar" style="width:100%;background:#1D9E75"></div></div></div>
+    <div class="mc"><p class="ml">Pedidos · Ticket</p><p class="mv">79</p><p class="ms">$868.349 ticket promedio</p></div>
+    <div class="mc"><p class="ml">ACOS performance</p><p class="mv">14,1%</p><p class="ms">Inv. perf $9,66M</p></div>
+    <div class="mc"><p class="ml">ACOS total</p><p class="mv">22,7%</p><p class="ms">Inv. total $15,6M</p></div>
+  </div>
+  <div class="g g4">
+    <div class="mc"><p class="ml">Inv. performance</p><p class="mv">$9,66M</p><p class="ms warn">Plan $11,30M → 85,5%</p><div class="prog-wrap"><div class="prog-bar" style="width:85.5%;background:#BA7517"></div></div></div>
+    <div class="mc"><p class="ml">Inv. total</p><p class="mv">$15,6M</p><p class="ms warn">Plan $17,75M → 87,9%</p><div class="prog-wrap"><div class="prog-bar" style="width:87.9%;background:#BA7517"></div></div></div>
+    <div class="mc"><p class="ml">VT julio</p><p class="mv">$75,8M</p><p class="ms">16 peds · ticket $4,74M</p></div>
+    <div class="mc"><p class="ml">Total web + VT</p><p class="mv up">$144,4M</p><p class="ms">VT = 52,5%</p></div>
+  </div>
+
+  <div class="st" style="margin-top:16px">Agosto en curso (1–9/8)</div>
+  <div class="g g4" style="margin-bottom:10px">
+    <div class="mc"><p class="ml">Facturación web</p><p class="mv">$21,1M</p><p class="ms">Obj. $65M → 32,4% en 9 días</p><div class="prog-wrap"><div class="prog-bar" style="width:32.4%;background:#185FA5"></div></div></div>
+    <div class="mc"><p class="ml">Pedidos · Ticket</p><p class="mv">25</p><p class="ms">$842.234 ticket promedio</p></div>
+    <div class="mc"><p class="ml">ACOS performance</p><p class="mv up">13,5%</p><p class="ms">Inv. perf $2,83M</p></div>
+    <div class="mc"><p class="ml">ACOS total</p><p class="mv">21,9%</p><p class="ms">Inv. total $4,61M</p></div>
+  </div>
+  <div class="g g4">
+    <div class="mc"><p class="ml">Inv. performance</p><p class="mv">$2,83M</p><p class="ms">$315K/día</p></div>
+    <div class="mc"><p class="ml">Inv. total</p><p class="mv">$4,61M</p><p class="ms">$512K/día</p></div>
+    <div class="mc"><p class="ml">VT agosto</p><p class="mv">$25,7M</p><p class="ms">5 peds · ticket $5,14M</p></div>
+    <div class="mc"><p class="ml">Total web + VT</p><p class="mv">$46,8M</p><p class="ms">VT = 54,9%</p></div>
+  </div>
+</div>
+
+<!-- ═══ COMPARATIVA PRIMEROS 9 DÍAS ═══ -->
+<div class="card">
+  <div class="st">Primeros 9 días — julio vs agosto</div>
+  <table class="t" style="margin-bottom:12px">
+    <thead><tr><th></th><th>Jul 1–9</th><th>Ago 1–9</th><th>Var.</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Facturación web</strong></td><td>$19,1M</td><td><span class="up">$21,1M</span></td><td><span class="up">▲10,3%</span></td></tr>
+      <tr><td><strong>Pedidos</strong></td><td>19</td><td><span class="up">25</span></td><td><span class="up">▲31,6%</span></td></tr>
+      <tr><td><strong>Ticket promedio</strong></td><td>$1.004.544</td><td>$842.234</td><td><span class="dn">▼16,2%</span></td></tr>
+      <tr><td><strong>Inv. performance</strong></td><td>$3,01M</td><td>$2,83M</td><td>▼5,8%</td></tr>
+      <tr><td><strong>Inv. total</strong></td><td>$4,20M</td><td>$4,61M</td><td><span class="warn">▲9,8%</span></td></tr>
+      <tr><td><strong>ACOS performance</strong></td><td>15,8%</td><td><span class="up">13,5%</span></td><td><span class="up">▼2,3pp</span></td></tr>
+      <tr><td><strong>ACOS total</strong></td><td>22,0%</td><td>21,9%</td><td>estable</td></tr>
+    </tbody>
+  </table>
+  <div class="nb">Comparando los mismos 9 días, agosto factura 10,3% más que julio ($21,1M vs $19,1M) con 6 pedidos más (25 vs 19) y un ACOS performance que mejoró de 15,8% a 13,5%. El ticket cayó 16,2% ($842K vs $1.005K) — julio tuvo 3 mesas de alta gama ($3,7M + $2,7M + $2,9M) en los primeros días que inflaron el promedio. La inversión total subió 9,8% en parte por el peso de Geo y campañas de branding en agosto.</div>
+</div>
+
+<!-- ═══ GRÁFICO FACTURACIÓN ═══ -->
+<div class="card">
+  <div class="st">Facturación web diaria — S3 julio → S1 agosto</div>
+  <canvas id="chartFac" style="max-height:200px"></canvas>
+</div>
+
+<!-- ═══ SEMANAL ═══ -->
+<div class="card">
+  <div class="st">Transición semanal — S3 julio → S4 julio → S1 agosto</div>
+  <div class="week-grid">
+    <div class="week-card">
+      <div class="week-title">S3 · 16–23/7</div>
+      <div class="week-row"><span class="week-label">Facturación</span><span>$14,1M</span></div>
+      <div class="week-row"><span class="week-label">Pedidos</span><span>19</span></div>
+      <div class="week-row"><span class="week-label">Ticket</span><span>$740.466</span></div>
+      <div class="week-row"><span class="week-label">ACOS perf</span><span class="warn">18,2%</span></div>
+    </div>
+    <div class="week-card">
+      <div class="week-title">S4 · 24–31/7</div>
+      <div class="week-row"><span class="week-label">Facturación</span><span class="up">$27,1M ▲92%</span></div>
+      <div class="week-row"><span class="week-label">Pedidos</span><span class="up">29</span></div>
+      <div class="week-row"><span class="week-label">Ticket</span><span class="up">$934.396</span></div>
+      <div class="week-row"><span class="week-label">ACOS perf</span><span class="up">9,3%</span></div>
+    </div>
+    <div class="week-card">
+      <div class="week-title">S1 · 1–9/8</div>
+      <div class="week-row"><span class="week-label">Facturación</span><span>$21,1M</span></div>
+      <div class="week-row"><span class="week-label">Pedidos</span><span>25</span></div>
+      <div class="week-row"><span class="week-label">Ticket</span><span>$842.234</span></div>
+      <div class="week-row"><span class="week-label">ACOS perf</span><span>13,5%</span></div>
+    </div>
+  </div>
+  <div class="wb">S4 julio fue un pico impulsado por la activación de 12 CSI — el resultado de S4 no es la base de comparación para agosto. S1 agosto se ubica entre S3 ($14,1M) y S4 ($27,1M) en facturación, con un ACOS de 13,5% que mejora respecto a S3 (18,2%). Los pedidos de S1 agosto (25) superan a S3 (19) y están en línea con el volumen mensual.</div>
+</div>
+
+<!-- ═══ TRÁFICO ═══ -->
+<div class="card">
+  <div class="st">Evolución de sesiones — julio vs agosto</div>
+  <canvas id="chartSessions" style="max-height:200px;margin-bottom:12px"></canvas>
+  <table class="t" style="margin-bottom:10px">
+    <thead><tr><th>Período</th><th>Sess/día prom.</th><th>Total</th></tr></thead>
+    <tbody>
+      <tr><td><strong>S3 julio (16–23)</strong></td><td>6.547</td><td>52.378</td></tr>
+      <tr><td><strong>S4 julio (24–31)</strong></td><td>6.626</td><td>53.011</td></tr>
+      <tr><td><strong>S1 agosto (1–9)</strong></td><td>6.884</td><td>61.959</td></tr>
+      <tr><td><strong>Media julio</strong></td><td>5.906</td><td>183.075</td></tr>
+    </tbody>
+  </table>
+  <div class="wb">El promedio diario de sesiones de agosto (6.884) se ubica por encima de la media de julio (5.906) y ligeramente por encima de S3 y S4. Sin embargo, se observa una desaceleración en los últimos 3 días de agosto: el 7/8 (5.785), 8/8 (5.459) y 9/8 (2.796) muestran una tendencia descendente que se aleja de la media de julio. Si esta tendencia se sostiene, podría indicar una caída real de tráfico hacia la segunda semana del mes — es un indicador a monitorear de cerca en los próximos días.</div>
+</div>
+
+<!-- ═══ OPTIMIZACIONES ═══ -->
+<div class="card">
+  <div class="st">Optimizaciones — enfoque en tendencias sostenibles</div>
+  <div class="checklist">
+    <div class="cl-item">
+      <span class="cl-icon">🔄</span>
+      <div>
+        <div class="cl-label">Piezas con 12 CSI — la rotación de creatividades puede haber generado un nuevo período de aprendizaje <span class="cl-tag cl-now">Monitorear</span></div>
+        <div class="cl-sub">Las 12 CSI siguen activas, pero se rotaron las piezas asociadas al cambio de condiciones de financiación. Es posible que las nuevas creatividades estén en fase de aprendizaje — monitorear el ACOS por pieza en los próximos 7 días para confirmar si estabiliza antes de tomar decisiones de escala</div>
+      </div>
+    </div>
+    <div class="cl-item">
+      <span class="cl-icon">📈</span>
+      <div>
+        <div class="cl-label">Comedor_Mesas_Prospecting — tendencia ascendente sostenida: ROAS 0,32 → 2,75 → 10,22 en 3 semanas <span class="cl-tag cl-now">Esta semana</span></div>
+        <div class="cl-sub">El único adset con tendencia de mejora consistente S3→S4→S1ago. Pasó de 1 compra con ROAS 0,32 a 4 compras con ROAS 10,22. La frecuencia se mantiene estable (1,34) sin señales de saturación. Se propone sostener el presupuesto actual y monitorear si la tendencia se mantiene antes de escalar — la consistencia es más valiosa que el pico</div>
+      </div>
+    </div>
+    <div class="cl-item">
+      <span class="cl-icon">🎯</span>
+      <div>
+        <div class="cl-label">Living_Sofas_Prospecting — evaluar la audiencia: 3 semanas sin compras con $474K invertidos <span class="cl-tag cl-now">Esta semana</span></div>
+        <div class="cl-sub">S3: $144K · 0 compras | S4: $148K · 0 compras | S1 ago: $183K · 0 compras. La audiencia no convierte a pesar de presupuesto creciente. Opciones: (1) ampliar la segmentación que puede estar demasiado nicho, (2) renovar el seed de la LAL con compradores recientes de sillones, (3) reducir presupuesto y reasignar hacia Comedor_Mesas que tiene tendencia ascendente</div>
+      </div>
+    </div>
+    <div class="cl-item">
+      <span class="cl-icon">🪑</span>
+      <div>
+        <div class="cl-label">Sillones_Prospecting — tendencia descendente: de ROAS 11,77 (S3) a 0 compras en S4 y S1 agosto <span class="cl-tag cl-now">Esta semana</span></div>
+        <div class="cl-sub">Frecuencia subió de 1,26 a 1,33 con presupuesto creciente ($177K→$170K→$249K) sin generar conversiones en las últimas 2 semanas. Señal temprana de saturación de audiencia. Se propone refrescar la segmentación con LAL desde compradores de sillones del backend + evaluar si las nuevas piezas de 12 CSI están funcionando para esta categoría</div>
+      </div>
+    </div>
+    <div class="cl-item">
+      <span class="cl-icon">🔁</span>
+      <div>
+        <div class="cl-label">RMKT Carrito Abandonado — caída progresiva: ROAS 1,33 → 1,01 → 0 compras <span class="cl-tag cl-now">Esta semana</span></div>
+        <div class="cl-sub">La tendencia es descendente con inversión de $480K→$446K→$257K. Real_State_Open_Mix_Mid-High activo como test pero con 0 compras en 2 semanas ($33K/sem). La audiencia de retargeting muestra agotamiento. Se propone: (1) ampliar la ventana de 30 a 60 días, (2) segmentar por valor de carrito ≥$500K para enfocar el retargeting en carritos de alto ticket, (3) refrescar las creatividades de catálogo</div>
+      </div>
+    </div>
+    <div class="cl-item">
+      <span class="cl-icon">💡</span>
+      <div>
+        <div class="cl-label">Iluminación — dos velocidades: Bancarizados con tendencia irregular vs High Spenders con bajo volumen estable <span class="cl-tag cl-next">Agosto</span></div>
+        <div class="cl-sub">Bancarizados: S3 $111K · 0 comp → S4 $172K · 3 comp (ROAS 19,89) → S1a $272K · 1 comp (ROAS 1,84). El pico de S4 no se sostuvo. High Spenders: consistente con baja inversión ($43K) y conversiones puntuales. Se propone mantener High Spenders en su nivel actual y evaluar si Bancarizados necesita un presupuesto más controlado en lugar de escalar</div>
+      </div>
+    </div>
+    <div class="cl-item">
+      <span class="cl-icon">🔍</span>
+      <div>
+        <div class="cl-label">Google Brand Search — verificar atribución: ROAS 0,30 en agosto vs 7,15 en julio <span class="cl-tag cl-now">Esta semana</span></div>
+        <div class="cl-sub">$314K invertidos con 2 compras por $93K atribuidos. El CTR sigue alto (40,16%) — la demanda de marca existe pero las conversiones no se están atribuyendo. Verificar configuración de conversiones en GA4, ventanas de atribución y si las compras de Brand Search están cayendo en otro canal (directo, orgánico)</div>
+      </div>
+    </div>
+    <div class="cl-item">
+      <span class="cl-icon">📊</span>
+      <div>
+        <div class="cl-label">Tráfico — monitorear la desaceleración de los últimos 3 días de agosto <span class="cl-tag cl-next">Agosto</span></div>
+        <div class="cl-sub">Los días 7/8 (5.785 sess), 8/8 (5.459) y 9/8 (2.796) muestran una tendencia descendente que se aleja de la media de julio (5.906/día). Si se sostiene, evaluar si es un patrón estacional o si requiere ajuste en las campañas de tráfico</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ META ADS ═══ -->
+<div class="card">
+  <div class="st">Meta Ads — agosto (1–9/8)</div>
+  <table class="t" style="margin-bottom:14px">
+    <thead><tr><th>Campaña</th><th>Inv.</th><th>Comp.</th><th>Revenue</th><th>ROAS</th><th>Ticket</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Mid Tkt Secondary</strong><span class="tag">Mesas Auxiliares · Sillones</span></td><td>$664.118</td><td>2</td><td>$621.000</td><td><span class="dn">0,94</span></td><td>$310.500</td></tr>
+      <tr><td><strong>High Tkt Statement</strong><span class="tag">Comedor/Mesas + Living/Sofás</span></td><td>$488.650</td><td>4</td><td>$3.127.000</td><td><span class="up">6,40</span></td><td><span class="up">$781.750</span></td></tr>
+      <tr><td><strong>Low Tkt Entrada</strong><span class="tag">Iluminación</span></td><td>$426.646</td><td>2</td><td>$901.000</td><td><span class="warn">2,11</span></td><td>$450.500</td></tr>
+      <tr><td><strong>RMKT Dinámico</strong></td><td>$201.578</td><td>0</td><td>—</td><td>—</td><td>—</td></tr>
+      <tr class="total-row"><td>Total performance Meta</td><td>$1.781.992</td><td>8</td><td>$4.649.000</td><td>2,61</td><td>$581.125</td></tr>
+    </tbody>
+  </table>
+
+  <div class="st">Tendencia por adset — S3 julio → S4 julio → S1 agosto</div>
+  <table class="t" style="margin-bottom:14px">
+    <thead><tr><th>Adset</th><th>S3 jul</th><th>S4 jul</th><th>S1 ago</th><th>Tendencia</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Comedor_Mesas</strong></td><td>1 comp · ROAS 0,32</td><td>1 comp · ROAS 2,75</td><td><span class="up">4 comp · ROAS 10,22</span></td><td><span class="up">▲ ascendente</span></td></tr>
+      <tr><td><strong>Mesas_Auxiliares</strong></td><td>0 comp</td><td><span class="up">2 comp · ROAS 16,38</span></td><td>2 comp · ROAS 1,49</td><td><span class="warn">irregular</span></td></tr>
+      <tr><td><strong>Ilum_Bancarizados</strong></td><td>0 comp</td><td><span class="up">3 comp · ROAS 19,89</span></td><td>1 comp · ROAS 1,84</td><td><span class="warn">irregular</span></td></tr>
+      <tr><td><strong>Ilum_High_Spenders</strong></td><td>0 comp</td><td>0 comp</td><td>1 comp · ROAS 9,37</td><td>bajo volumen</td></tr>
+      <tr><td><strong>Sillones</strong></td><td><span class="up">2 comp · ROAS 11,77</span></td><td>0 comp</td><td>0 comp</td><td><span class="dn">▼ descendente</span></td></tr>
+      <tr><td><strong>Living_Sofas</strong></td><td>0 comp</td><td>0 comp</td><td>0 comp</td><td><span class="dn">sin conversión</span></td></tr>
+      <tr><td><strong>RMKT_Carrito</strong></td><td>3 comp · ROAS 1,33</td><td>3 comp · ROAS 1,01</td><td>0 comp</td><td><span class="dn">▼ descendente</span></td></tr>
+    </tbody>
+  </table>
+
+  <div class="st">Top anuncios — agosto (con compras)</div>
+  <table class="t">
+    <thead><tr><th>Anuncio</th><th>Campaña</th><th>Inv.</th><th>Comp.</th><th>Revenue</th><th>ROAS</th><th>Ticket</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Catalogo_Mesas-Bajas-Rock_16-07</strong></td><td>High Tkt</td><td>$219.941</td><td>4</td><td>$3.127.000</td><td><span class="up">14,22</span></td><td>$781.750</td></tr>
+      <tr><td><strong>IMG_Iluminacion_50off_08-07</strong></td><td>Low Tkt</td><td>$30.031</td><td>1</td><td>$401.000</td><td><span class="up">13,35</span></td><td>$401.000</td></tr>
+      <tr><td><strong>IMG_Mesas_Aux_Saddle_12CSI_23-07</strong></td><td>Mid Tkt</td><td>$71.681</td><td>2</td><td>$621.000</td><td><span class="up">8,66</span></td><td>$310.500</td></tr>
+      <tr><td><strong>IMG_Iluminacion_12CSI_03-08</strong></td><td>Low Tkt</td><td>$86.993</td><td>1</td><td>$500.000</td><td><span class="up">5,75</span></td><td>$500.000</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ═══ GOOGLE ═══ -->
+<div class="card">
+  <div class="st">Google Ads — agosto (1–9/8)</div>
+  <table class="t" style="margin-bottom:12px">
+    <thead><tr><th>Campaña</th><th>Etapa</th><th>Inv.</th><th>Clics</th><th>CTR</th><th>Compras</th><th>Revenue</th><th>ROAS</th></tr></thead>
+    <tbody>
+      <tr><td><strong>PMax GeoLocal</strong></td><td><span class="badge b-amber">Geo</span></td><td>$532.229</td><td>3.792</td><td>1,74%</td><td>—</td><td>—</td><td>—</td></tr>
+      <tr><td><strong>PMax Purchase</strong></td><td><span class="badge b-green">Perf</span></td><td>$444.096</td><td>10.086</td><td>7,86%</td><td>2</td><td>$2.156.000</td><td><span class="up">4,85</span></td></tr>
+      <tr><td><strong>Brand Search</strong></td><td><span class="badge b-green">Perf</span></td><td>$314.031</td><td>1.937</td><td><span class="up">40,16%</span></td><td>2</td><td>$93.366</td><td><span class="dn">0,30</span></td></tr>
+      <tr><td><strong>Non Brand Search</strong></td><td><span class="badge b-green">Perf</span></td><td>$186.971</td><td>844</td><td>3,67%</td><td>—</td><td>—</td><td>—</td></tr>
+      <tr><td><strong>YT Awareness BrandFilm</strong></td><td><span class="badge b-gray">Brand</span></td><td>$107.314</td><td>103</td><td>0,24%</td><td>—</td><td>—</td><td>—</td></tr>
+      <tr><td><strong>Search Conquest Tráfico</strong></td><td><span class="badge b-blue">Conquista</span></td><td>$101.225</td><td>894</td><td>2,81%</td><td>—</td><td>—</td><td>—</td></tr>
+      <tr><td><strong>PMax Tráfico</strong></td><td><span class="badge b-gray">Tráfico</span></td><td>$89.354</td><td>19.015</td><td>9,02%</td><td>—</td><td>—</td><td>—</td></tr>
+    </tbody>
+  </table>
+  <div class="wb">Brand Search mantiene CTR 40,16% — la intención de búsqueda de marca es alta — pero el revenue atribuido cayó de $6,9M (julio) a $93K. PMax Purchase con ROAS 4,85 asumió parte de la atribución (2 compras · $2,16M). Se recomienda verificar la configuración de conversiones y las ventanas de atribución para entender si el revenue de Brand Search se está asignando a otro canal.</div>
+</div>
+
+<!-- ═══ CATEGORÍAS POR FAMILIA ═══ -->
+<div class="card">
+  <div class="st">Revenue por familia de producto — julio vs agosto (1–9/8)</div>
+  <p style="font-size:12px;color:#888780;margin-bottom:10px">Desglose por familia de producto para identificar qué familias explican la variación en el mix de facturación. El backend de items tiene granularidad mensual — la comparación es julio completo vs agosto acumulado al 9/8.</p>
+  <table class="t" style="margin-bottom:10px">
+    <thead><tr><th>Familia</th><th>Rev. julio</th><th>Share jul</th><th>Rev. agosto</th><th>Share ago</th><th>Var. share</th><th>Uds. ago</th><th>Tkt/u ago</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Mesas Auxiliares</strong><span class="tag">Laterales, Bajas, Altas</span></td><td>$15.654.000</td><td>34,0%</td><td>$5.117.000</td><td>29,8%</td><td><span class="dn">▼4,2pp</span></td><td>7</td><td>$731.000</td></tr>
+      <tr><td><strong>Sofás</strong><span class="tag">Milano Praga en agosto</span></td><td>—</td><td>—</td><td>$3.790.000</td><td><span class="up">22,1%</span></td><td><span class="up">nueva</span></td><td>1</td><td><span class="up">$3.790.000</span></td></tr>
+      <tr><td><strong>Sillas de Comedor</strong></td><td>$9.961.800</td><td>21,7%</td><td>$3.030.200</td><td>17,6%</td><td><span class="dn">▼4,1pp</span></td><td>17</td><td>$178.247</td></tr>
+      <tr><td><strong>Mesas de Comedor</strong><span class="tag">Perth y Ritz en jul, Brasserie en ago</span></td><td>$9.391.000</td><td>20,4%</td><td>$2.390.000</td><td>13,9%</td><td><span class="dn">▼6,5pp</span></td><td>1</td><td>$2.390.000</td></tr>
+      <tr><td><strong>Alfombras</strong></td><td>$1.686.000</td><td>3,7%</td><td>$1.350.000</td><td><span class="up">7,9%</span></td><td><span class="up">▲4,2pp</span></td><td>4</td><td>$337.500</td></tr>
+      <tr><td><strong>Sillones</strong><span class="tag">Pem, Togo en jul · Togo, Julan en ago</span></td><td>$3.950.000</td><td>8,6%</td><td>$1.134.000</td><td>6,6%</td><td><span class="dn">▼2,0pp</span></td><td>2</td><td>$567.000</td></tr>
+      <tr><td><strong>Banquetas</strong></td><td>$2.953.600</td><td>6,4%</td><td>—</td><td>—</td><td><span class="dn">sale</span></td><td>0</td><td>—</td></tr>
+      <tr><td><strong>Iluminación</strong></td><td>$1.205.000</td><td>2,6%</td><td>—</td><td>—</td><td><span class="dn">sale</span></td><td>0</td><td>—</td></tr>
+      <tr><td><strong>Mesas (otras)</strong><span class="tag">Otis, Macombs</span></td><td>$1.097.500</td><td>2,4%</td><td>$368.500</td><td>2,1%</td><td>estable</td><td>1</td><td>$368.500</td></tr>
+      <tr><td><strong>Textil & Cama</strong></td><td>$84.600</td><td>0,2%</td><td>—</td><td>—</td><td>—</td><td>0</td><td>—</td></tr>
+      <tr class="total-row"><td>Total categorizado</td><td>$45.983.500</td><td>100%</td><td>$17.179.700</td><td>100%</td><td></td><td>33</td><td>$520.597</td></tr>
+    </tbody>
+  </table>
+  <div class="wb">El cambio más notable es la aparición de Sofás como familia en agosto (22,1% del share · $3,79M) — en julio no se registraron ventas de sofás, solo sillones. Esto sugiere que la campaña Living_Sofas_Prospecting o la VT están traccionando este segmento. Mesas de Comedor cayó de 20,4% a 13,9% con solo 1 unidad vs 4 en julio — la Mesa Perth ($3,67M) y la Ritz ($2,74M) que lideraron julio no se repitieron. Banquetas e Iluminación no registraron ventas en agosto — si estos productos están disponibles en el catálogo activo, puede haber una oportunidad de revisión del mix de piezas. Alfombras ganó share (3,7% → 7,9%) con Yutex Ankh y Yute Nomad, lo que puede indicar que este segmento tiene margen de crecimiento si se le da más presupuesto.</div>
+</div>
+
+<!-- ═══ TOP 10 COMPARATIVO ═══ -->
+<div class="card">
+  <div class="st">Top 10 productos — julio vs agosto</div>
+  <p style="font-size:12px;color:#888780;margin-bottom:10px">Comparación de los productos de mayor facturación de cada mes para detectar cambios en el mix, posibles quiebres de stock o cambios en el comportamiento de compra.</p>
+  <table class="t" style="margin-bottom:14px">
+    <thead><tr><th>#</th><th>Top 10 julio</th><th>Uds.</th><th>Tkt/u</th><th>Revenue</th><th>¿En ago?</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td><strong>Mesa Lat. Tesa Oval White</strong></td><td>3</td><td>$1.750K</td><td>$5.250.000</td><td><span class="dn">No</span></td></tr>
+      <tr><td>2</td><td><strong>Mesa Comedor Perth Mate Black</strong></td><td>1</td><td>$3.675K</td><td>$3.675.000</td><td><span class="dn">No</span></td></tr>
+      <tr><td>3</td><td><strong>Silla Bodene Beige</strong></td><td>16</td><td>$1.090K</td><td>$3.268.800</td><td><span class="up">Sí · 6u</span></td></tr>
+      <tr><td>4</td><td><strong>Mesa Baja Gio Roble 150×90</strong></td><td>1</td><td>$2.900K</td><td>$2.900.000</td><td><span class="dn">No</span></td></tr>
+      <tr><td>5</td><td><strong>Mesa Comedor Ritz Marble 120</strong></td><td>1</td><td>$2.736K</td><td>$2.736.000</td><td><span class="dn">No</span></td></tr>
+      <tr><td>6</td><td><strong>Mesa Brasserie Roble Black</strong></td><td>1</td><td>$2.390K</td><td>$2.390.000</td><td><span class="up">Sí · 1u</span></td></tr>
+      <tr><td>7</td><td><strong>Mesa Alta Rake Natural</strong></td><td>2</td><td>$1.062K</td><td>$2.124.000</td><td><span class="up">Sí · 1u</span></td></tr>
+      <tr><td>8</td><td><strong>Mesa Baja Rake Natural</strong></td><td>2</td><td>$882K</td><td>$1.764.000</td><td><span class="dn">No</span></td></tr>
+      <tr><td>9</td><td><strong>Mesa Baja Jacques Chrome</strong></td><td>1</td><td>$1.520K</td><td>$1.520.000</td><td><span class="dn">No</span></td></tr>
+      <tr><td>10</td><td><strong>Sillón Pem Beige</strong></td><td>1</td><td>$1.490K</td><td>$1.490.000</td><td><span class="dn">No</span></td></tr>
+    </tbody>
+  </table>
+  <table class="t" style="margin-bottom:10px">
+    <thead><tr><th>#</th><th>Top 10 agosto</th><th>Uds.</th><th>Tkt/u</th><th>Revenue</th><th>¿En jul?</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td><strong>Sofá Milano Praga Cat Black</strong><span class="tag">Nuevo en top 10</span></td><td>1</td><td>$3.790K</td><td>$3.790.000</td><td><span class="up">Nuevo</span></td></tr>
+      <tr><td>2</td><td><strong>Mesa Brasserie Roble Black</strong></td><td>1</td><td>$2.390K</td><td>$2.390.000</td><td><span class="up">Sí · #6</span></td></tr>
+      <tr><td>3</td><td><strong>Mesa Lat. Tesa Square Black</strong><span class="tag">Variante de la Oval White de julio</span></td><td>2</td><td>$1.125K</td><td>$2.250.000</td><td><span class="up">Nuevo</span></td></tr>
+      <tr><td>4</td><td><strong>Silla Bodene Beige</strong><span class="tag">Recurrente — baja de 16u a 6u</span></td><td>6</td><td>$908K</td><td>$1.816.000</td><td><span class="up">Sí · #3</span></td></tr>
+      <tr><td>5</td><td><strong>Sillón Togo Bluvel Grey</strong></td><td>1</td><td>$960K</td><td>$960.000</td><td><span class="up">Nuevo</span></td></tr>
+      <tr><td>6</td><td><strong>Mesa Lat. Nephi Walnut 54cm</strong></td><td>1</td><td>$790K</td><td>$790.000</td><td><span class="up">Nuevo</span></td></tr>
+      <tr><td>7</td><td><strong>Mesa Lat. Swivel</strong></td><td>1</td><td>$635K</td><td>$635.000</td><td><span class="up">Nuevo</span></td></tr>
+      <tr><td>8</td><td><strong>Mesa Lat. Tesa Oval Black</strong></td><td>1</td><td>$625K</td><td>$625.000</td><td><span class="up">Nuevo</span></td></tr>
+      <tr><td>9</td><td><strong>Mesa Alta Rake Natural</strong></td><td>1</td><td>$590K</td><td>$590.000</td><td><span class="up">Sí · #7</span></td></tr>
+      <tr><td>10</td><td><strong>Yutex Ankh 200×300</strong></td><td>1</td><td>$498K</td><td>$498.000</td><td><span class="up">Nuevo</span></td></tr>
+    </tbody>
+  </table>
+  <div class="wb">De los 10 productos top de julio, 7 no aparecen en el top de agosto. Los productos que salieron incluyen los de mayor ticket del mes: Mesa Perth ($3,67M), Mesa Gio ($2,9M), Mesa Ritz ($2,74M), Mesa Jacques ($1,52M) y Sillón Pem ($1,49M). Estos 5 productos sumaban $13,3M en julio. Si la salida responde a quiebre de stock o disponibilidad limitada, esto explicaría parcialmente la caída del ticket promedio. La Silla Bodene bajó de 16 a 6 unidades — se mantiene como producto recurrente pero con menor volumen. El Sofá Milano Praga ($3,79M) es el único producto nuevo que compensa parcialmente el ticket alto de julio. Se recomienda verificar la disponibilidad actual de Perth, Gio, Ritz y Jacques para determinar si es un tema de stock o un cambio en el mix de demanda.</div>
+</div>
+
+<!-- ═══ GEO ═══ -->
+<div class="card">
+  <div class="st">Geo — agosto (1–9/8) · Meta + Google consolidado</div>
+  <table class="t" style="margin-bottom:10px">
+    <thead><tr><th>Sucursal</th><th>Inv. Meta</th><th>Inv. Google</th><th>Inv. total</th><th>Alcance Meta</th><th>Conv. dirección</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Alcorta</strong></td><td>$232.221</td><td>$131.181</td><td>$363.402</td><td>890.118</td><td><span class="up">1.237</span></td></tr>
+      <tr><td><strong>Unicenter</strong></td><td>$90.168</td><td>$238.756</td><td>$328.924</td><td>485.626</td><td><span class="up">1.680</span></td></tr>
+      <tr><td><strong>Arenales</strong></td><td>$157.315</td><td>$57.487</td><td>$214.802</td><td>414.589</td><td>639</td></tr>
+      <tr><td><strong>Norcenter</strong></td><td>$86.424</td><td>$75.737</td><td>$162.161</td><td>458.146</td><td>613</td></tr>
+      <tr><td><strong>Pilar</strong></td><td>$71.719</td><td>$30.433</td><td>$102.152</td><td>378.550</td><td>277</td></tr>
+      <tr><td><strong>YT + PMax Tráfico</strong></td><td>—</td><td>$196.668</td><td>$196.668</td><td>—</td><td>—</td></tr>
+      <tr class="total-row"><td>Total</td><td>$691.837</td><td>$730.262</td><td>$1.368.109</td><td>2.627.029</td><td>4.446</td></tr>
+    </tbody>
+  </table>
+  <div class="nb">Unicenter lidera en conversiones de dirección (1.680) con la mayor inversión Google ($239K). Alcorta tiene la mayor inversión total ($363K) y el mayor alcance Meta (890K). Total: 4.446 conversiones de dirección en 9 días.</div>
+</div>
+
+<!-- ═══ VT ═══ -->
+<div class="card">
+  <div class="st">Venta telefónica — agosto (1–9/8)</div>
+  <div class="g g3" style="margin-bottom:10px">
+    <div class="mc"><p class="ml">Facturación VT</p><p class="mv">$25,7M</p><p class="ms">5 pedidos</p></div>
+    <div class="mc"><p class="ml">Ticket promedio VT</p><p class="mv up">$5.141.648</p><p class="ms">5,9× el ticket web</p></div>
+    <div class="mc"><p class="ml">Facturación combinada</p><p class="mv">$46,8M</p><p class="ms">VT = 54,9% del total</p></div>
+  </div>
+  <div class="st">Principales productos VT — agosto</div>
+  <table class="t">
+    <thead><tr><th>Producto</th><th>Uds.</th><th>Ticket/u</th><th>Revenue</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Silla Vary Grey</strong></td><td>6</td><td>$700.000</td><td>$4.200.000</td></tr>
+      <tr><td><strong>Sillón Souto Beige</strong></td><td>2</td><td>$1.760.000</td><td>$3.520.000</td></tr>
+      <tr><td><strong>Silla Bodene Beige</strong></td><td>8</td><td>$363.200</td><td>$2.905.600</td></tr>
+      <tr><td><strong>Mueble TV Astel</strong></td><td>1</td><td>$2.827.500</td><td>$2.827.500</td></tr>
+      <tr><td><strong>Sofá Rest White</strong></td><td>1</td><td>$2.760.000</td><td>$2.760.000</td></tr>
+      <tr><td><strong>Sofá Spind Off White</strong></td><td>1</td><td>$2.097.900</td><td>$2.097.900</td></tr>
+      <tr><td><strong>Sofá Acre Light Grey 240</strong></td><td>1</td><td>$2.070.000</td><td>$2.070.000</td></tr>
+      <tr><td><strong>Yute Zara Natural 240×300</strong></td><td>2</td><td>$594.000</td><td>$1.188.000</td></tr>
+    </tbody>
+  </table>
+  <div class="nb" style="margin-top:8px">La VT de agosto está dominada por sillones y sofás de alto ticket (Souto, Rest, Spind, Acre) que suman $10,4M entre 5 unidades. La Silla Bodene y Vary lideran el volumen (14 unidades combinadas). El canal de VT aporta el segmento de mayor valor unitario de la marca — los productos que se venden por teléfono son consistentemente de ticket más alto que los del ecommerce.</div>
+</div>
+
+</div>
+<script>
+Chart.defaults.font.family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif";
+Chart.defaults.font.size=11;
+const gc='rgba(0,0,0,0.05)',tc='#888780';
+// Facturación chart
+const facLabels=['16/7','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','1/8','2','3','4','5','6','7','8','9'];
+const julD=[890800,4086600,1239800,444000,1954000,4643560,115900,694202,341000,1501800,0,2997833,6209416,4438134,8565800,3043500,0,0,0,0,0,0,0,0,0];
+const augD=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1724000,859426,4906260,1996000,1867253,39800,2503000,1660600,5499500];
+new Chart(document.getElementById('chartFac'),{type:'bar',data:{labels:facLabels,datasets:[
+{label:'Julio',data:julD,backgroundColor:'rgba(24,95,165,0.7)',borderRadius:4,order:3},
+{label:'Agosto',data:augD,backgroundColor:'rgba(29,158,117,0.7)',borderRadius:4,order:2}
+]},options:{responsive:true,interaction:{mode:'index',intersect:false},plugins:{legend:{labels:{color:tc,boxWidth:12,padding:16}},tooltip:{callbacks:{label:ctx=>` $${(ctx.parsed.y/1000000).toFixed(2)}M`}}},scales:{x:{ticks:{color:tc,font:{size:10}},grid:{color:gc},stacked:true},y:{ticks:{color:tc,callback:v=>'$'+(v/1000000).toFixed(1)+'M'},grid:{color:gc},stacked:true}}}});
+// Sessions chart
+const sessLabels=['16/7','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','1/8','2','3','4','5','6','7','8','9'];
+const sessData=[6018,6403,5771,7321,6914,7147,6920,5884,6371,6162,7617,6983,6934,6125,6485,6334,7149,8440,8322,8259,7825,7924,5785,5459,2796];
+const julAvg=Array(25).fill(5906);
+new Chart(document.getElementById('chartSessions'),{type:'line',data:{labels:sessLabels,datasets:[
+{label:'Sesiones diarias',data:sessData,borderColor:'#185FA5',backgroundColor:'rgba(24,95,165,0.1)',fill:true,tension:0.3,pointRadius:3,pointBackgroundColor:'#185FA5',order:2},
+{label:'Media julio (5.906/día)',data:julAvg,borderColor:'#D85A30',borderDash:[6,4],borderWidth:2,pointRadius:0,fill:false,order:1}
+]},options:{responsive:true,interaction:{mode:'index',intersect:false},plugins:{legend:{labels:{color:tc,boxWidth:12,padding:16}},tooltip:{callbacks:{label:ctx=>` ${ctx.parsed.y.toLocaleString()} sesiones`}}},scales:{x:{ticks:{color:tc,font:{size:10}},grid:{color:gc}},y:{ticks:{color:tc},grid:{color:gc}}}}});
+</script></body></html>
